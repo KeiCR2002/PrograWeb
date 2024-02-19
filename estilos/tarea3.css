@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+header {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    text-align: center;
+    background-color: rgb(64, 53, 53);
+    opacity: 0.8;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+.container {
+    width: 80%;
+    position: relative;
+    background-image: url("../imagenes/home.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 0px;
+    height: auto;
+}
+
+#contenido {
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabla-platillos {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: rgb(64, 53, 53);
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+#tabla-platillos th, #tabla-platillos td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+#destinos {
+    margin-top: 20px;
+    width: 70%;
+    background-color: rgb(64, 53, 53);
+    opacity: 0.8;
+}
+
+#destinos h3 {
+text-align: center;
+}
+
+#destinos li {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.enlace a {
+    color: white;
+    text-decoration: none;
+}

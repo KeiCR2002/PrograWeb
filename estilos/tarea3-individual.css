@@ -1,0 +1,49 @@
+.container {
+    background-image: url("../imagenes/home.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    height: 2000px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(64, 53, 53);
+    padding: 10px;
+}
+
+.imagen-galeria {
+    width: 30%;
+}
+
+.imagen-galeria img {
+    width: 100%;
+    min-height: 240px;
+}
+
+.informacion {
+    margin-top: 20px;
+    width: 90%;
+    background-color: rgb(64, 53, 53);
+    opacity: 0.8;
+    padding: 10px;
+}
+
+.video {
+    width: 50%;
+    max-height: 360px;
+    margin-top: 20px;
+    display: block;
+}
+
+audio {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.enlace a {
+    color: white;
+    text-decoration: none;
+}
