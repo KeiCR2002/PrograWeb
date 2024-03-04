@@ -1,0 +1,172 @@
+body {
+    margin: 0px; /* Formatear body */
+    padding: 0px; /* Formatear body */
+    background-color: lightgray; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    
+    display: flex; /* FLEXBOX - Para hacer los elementos dentro de él flexibles */
+    align-items: center; /* FLEXBOX - align-items: para alinear elementos - Posibles valores: center */
+    justify-content: center; /* FLEXBOX - sirve para organizar los elementos dentro de él. */
+    /*justify-content: space-around; FLEX BOX - deja el mismo espacio entre los elementos dentro él */
+    /*justify-content: space-between; FLEX BOX - coloca un elemento al inicio y otro al final, si hay más elementos los ubica en el centro dejando un espacio del mismo tamaño entre cada uno */
+
+    flex-direction: column; /* FLEX BOX - Es la dirección en la que se van a ubicar los elementos. column para columnas y row para filas*/
+}
+
+nav {
+    width: 80%;
+    background-color: #000;
+}
+
+header {
+    width: 80%;
+    text-align: left; /* Para alinear el texto que está dentro, left para izquierda, right para derecha, center para centro */
+    color: white;
+    border-bottom: 3px solid gray; /* primera posición: grosor del borde, va en pixeles. Segunda posición: el estilo, por lo general es solid. Tercera posición: el color del borde */
+
+    background-image: url("../imagenes/tarea5/wallpaper2.jpg"); /* para poner una imagen de fondo */
+    background-size: cover; /* Para indicar el tamaño de la imagen de fondo*/
+    background-position: 50%; /* A partir de donde se va a mostrar la imagen. 50% quiere decir que se muestra desde la mitad */
+}
+
+header h1 {
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+.HeaderDesc {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    color: #E49B0F;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #E49B0F;
+}
+
+nav li {
+    float: left; /*En elementos li sirve para mostrarlos en una misma línea */
+    margin-right: 20px;
+}
+
+/***** main *****/ 
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    width: 78%;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px; /* para darle un borde redondeado a un elemnto */
+    border-left: 5px solid #E49B0F;
+    padding: 20px;
+}
+
+aside {
+    width: 22%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+article h2, aside h2 {
+    color: #E49B0F;
+}
+
+article h2, article h5, aside h2, aside h5, aside p {
+    margin: 0px;
+}
+
+.recetas {
+    background-color: #BBACAF;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+.recetas:hover {
+    background-color: #DAD4E0;
+    border: 2px solid #E49B0F;
+}
+
+.recetas img {
+    border-radius: 50%;
+}
+
+.recetas a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold; /* Grosor del la letra - bold es negrita */
+    margin-left: 10px;
+}
+
+.recetas p {
+    display: flex; /* FLEXBOX - Estos 4 atributos así sirven para alinear un elemento horixzontal y verticalmente */
+    justify-content: center; /* FLEXBOX - Estos 4 atributos así sirven para alinear un elemento horixzontal y verticalmente */
+    text-align: center; /* FLEXBOX - Estos 4 atributos así sirven para alinear un elemento horixzontal y verticalmente */
+    align-items: center; /* FLEXBOX - Estos 4 atributos así sirven para alinear un elemento horixzontal y verticalmente */
+    flex-direction: column;
+}
+
+/***** End main *****/
+
+footer {
+    width: 80%;
+    height: 100px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/***** Teléfonos *****/ 
+
+@media only screen and (max-width: 768px) {
+    header, nav {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    article, aside {
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+        padding: 5px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+/***** End Teléfonos *****/
