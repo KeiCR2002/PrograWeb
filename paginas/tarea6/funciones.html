@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="stylesheet" href="../../estilos/tarea-6.css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Definir y llamar funciones</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+// Definición
+function llamarFuncion(nombre) {
+    document.getElementById("resultadoCasoOcho").innerText = "Hola " + nombre;
+}
+
+// Llamado
+En este caso se llama en el evento onclick del botón
+                    </code>
+                </pre>
+                <button onclick="llamarFuncion('Keilyn')">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoOcho"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/tarea6.js"></script>
+</body>
+</html>

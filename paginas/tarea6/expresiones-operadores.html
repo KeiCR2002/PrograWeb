@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresiones y operadores</title>
+    <link rel="stylesheet" href="../../estilos/tarea-6.css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Asignación y comparación</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoNueve() {
+    var primerNumero = 10;
+    var segundoNumero = "10";
+
+    if (primerNumero == segundoNumero) {
+        document.getElementById("resultadoCasoNueve").innerText = "== devuelve true\n";
+    }
+
+    if (primerNumero === segundoNumero) {
+        document.getElementById("resultadoCasoNueve").innerText += "=== devuelve true\n";
+    } else {
+        document.getElementById("resultadoCasoNueve").innerText += "=== devuelve false\n";
+    }
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoNueve()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoNueve"></p>
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Operadores aritméticos</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoDiez() {
+    var primerNumero = 10;
+    var segundoNumero = 5;
+
+    document.getElementById("resultadoCasoDiez").innerText += "El resultado de la suma es " + (primerNumero + segundoNumero);
+    document.getElementById("resultadoCasoDiez").innerText += "\nEl resultado de la resta es " + (primerNumero - segundoNumero);
+    document.getElementById("resultadoCasoDiez").innerText += "\nEl resultado de la multiplicación es " + (primerNumero * segundoNumero);
+    document.getElementById("resultadoCasoDiez").innerText += "\nEl resultado de la diviisón es " + (primerNumero / segundoNumero);
+    document.getElementById("resultadoCasoDiez").innerText += "\nEl resultado del módulo es " + (primerNumero % segundoNumero);
+
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoDiez()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoDiez"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/tarea6.js"></script>
+</body>
+</html>

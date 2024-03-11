@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles e iteración</title>
+    <link rel="stylesheet" href="../../estilos/tarea-6.css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>for</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoCinco() {
+    var numerosArray = "Los números del array son: ";
+    for (let i = 1; i <= 10; i++) {
+        numerosArray += i + " - ";
+    }
+    document.getElementById("resultadoCasoCinco").innerText = numerosArray.toString();
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoCinco()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoCinco"></p>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>while</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoSeis() {
+    let contador = 1;
+    while (contador < 5) {
+        console.log(contador);
+        contador++;
+    }
+    document.getElementById("resultadoCasoSeis").innerText = "El contador se detuvo en: " + contador;
+
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoSeis()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoSeis"></p>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>do...while</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoSiete() {
+    let contador = 1;
+    do {
+        contador++;
+    } while (contador < 5);
+
+    document.getElementById("resultadoCasoSiete").innerText = "El contador se detuvo en: " + contador;
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoSiete()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoSiete"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/tarea6.js"></script>
+</body>
+</html>

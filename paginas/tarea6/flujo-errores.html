@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de flujo y manejo de errores</title>
+    <link rel="stylesheet" href="../../estilos/tarea-6.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>if...else</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+let edad = 18;
+
+if (edad >= 18) {
+    document.getElementById("resultadoEdad").innerText = "Mayor de edad";
+} else {
+    document.getElementById("resultadoEdad").innerText = "Menor de edad";
+}
+                    </code>
+                </pre>  
+
+                <button onclick="ejecutarCasoUno()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p>
+                    La persona de edad 18 es: <span id="resultadoEdad"></span>
+                </p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>switch</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+var mes = 3;
+var nombreMes;
+
+switch (mes) {
+    case 1:
+        nombreMes = "Enero";
+        break;
+    case 2:
+        nombreMes = "Febrero";
+        break;
+    case 3:
+        nombreMes = "Marzo";
+        break;
+    default:
+        nombreMes = "Mes no válido";
+}      
+document.getElementById("resultadoMes").innerText = "El mes ingresado es: " + nombreMes;
+                </code>
+                </pre>
+                <button onclick="ejecutarCasoDos()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoMes"></p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>try/catch/throw</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+var primerNumero = 10;
+var numero = 15;
+var resultadoSuma = 0; 
+try {
+    resultadoSuma = primerNumero + segundoNumero;
+    document.getElementById("resultadoCasoTres").innerText = "El resultado de la suma es: " + resultadoSuma;
+} catch (error) {
+    document.getElementById("resultadoCasoTres").innerText = "Ha ocurrido un error al hacer la suma";
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoTres()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoTres"></p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Objetos Error</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+try {
+    var errorPersonalizado = new Error("Este es un error personalizado donde indico el mensaje de salida");
+    document.getElementById("resultadoCasoCuatro").innerText = errorPersonalizado.message;
+} catch (error) {
+    document.getElementById("resultadoCasoCuatro").innerText = error.message;
+}
+                    </code>
+                </pre>
+
+                <button onclick="ejecutarCasoCuatro()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoCuatro"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../scripts/tarea6.js"></script>
+</body>
+</html>
