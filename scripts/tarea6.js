@@ -119,4 +119,105 @@ function ejecutarCasoDiez() {
 
 }
 
-//
+// Números y fechas 
+// Caso 11 - Objeto Number
+function ejecutarCasoOnce() {
+    var factorUno = "a";
+    var factorDos = "18";
+    
+    if (Number.isNaN(factorUno)) {
+        document.getElementById("resultadoCasoOnce").innerText += "El valor " + factorUno + " es número\n";
+    } else {
+        document.getElementById("resultadoCasoOnce").innerText += "El valor " + factorUno + " no es número\n";
+    }
+
+    if (Number.isNaN(factorDos)) {
+        document.getElementById("resultadoCasoOnce").innerText += "El valor " + factorDos + " no es número\n";
+    } else {
+        document.getElementById("resultadoCasoOnce").innerText += "El valor " + factorDos + " es número\n";
+    }
+}
+
+// Caso 12 - Objeto Math
+function ejecutarCasoDoce() {
+    var hilera = "";
+    hilera = "Math.sqrt(100) -> Raíz cuadrada: " + Math.sqrt(100);
+    hilera += "\nMath.pow(10, 2) -> Potencia: " + Math.pow(10, 2);
+    hilera += "\nMath.abs(-25) -> Valor absoluto: " + Math.abs(-25);
+    hilera += "\nMath.max(100, 25) -> Número mayor entre dos valores: " + Math.max(100, 25);
+    hilera += "\nMath.min(60, 12) -> Número menos entre dos valores: " + Math.min(60, 12);
+
+    document.getElementById("resultadoCasoDoce").innerText = hilera;
+}
+
+// Caso 13 - Objeto Date
+function ejecutarCasoTrece() {
+    var hilera = "";
+    var fechaActual = new Date();
+
+    hilera += "La fecha actual es: " + fechaActual;
+    hilera += "\nEl año actual es: " + fechaActual.getFullYear();
+    hilera += "\nEl mes actual es: " + (fechaActual.getMonth() + 1);
+    hilera += "\nEl día del mes actual es: " + fechaActual.getDate();
+
+    document.getElementById("resultadoCasoTrece").innerText = hilera;
+}
+
+// Formateo de texto
+// Caso 14 - Cadenas literales
+function ejecutarCasoCatorce() {
+    var nombre = "Keilyn";
+    var universidad = "UTN";
+
+    document.getElementById("resultadoCasoCatorce").innerText = `Mi nombre es ${nombre} y estudio en la ${universidad}`;
+}
+
+// Caso 15 - Objeto String
+function ejecutarCasoQuince() {
+    var mensaje = new String("Hola mundo");
+    var hilera = "";
+
+    hilera += "Longitud de la cadena 'Hola mundo': " + mensaje.length;
+    hilera += "\nCaracter de la posición 2 de la cadena 'Hola mundo': " + mensaje.charAt(2);
+    hilera += "\nConvertir la cadena 'Hola mundo' a minúscula: " + mensaje.toLowerCase();
+    hilera += "\nConvertir la cadena 'Hola mundo' a mayúscula: " + mensaje.toUpperCase();
+    hilera += "\nExisten más funciones con el objeto String";
+
+    document.getElementById("resultadoCasoQuince").innerText = hilera;
+}
+
+// Colecciones indexadas
+// Caso 16 - Arreglos
+function ejecutarCasoDieciseis() {
+    var array = [10, 27, 22, 18, 2];
+
+    var hilera = "Elemento en la posición 2 del arreglo [10, 27, 22, 18, 2]: " + array[2];
+    hilera += "\nTamaño del arreglo [10, 27, 22, 18, 2]: " + array.length;
+
+    document.getElementById("resultadoCasoDieciseis").innerText = hilera;
+}
+
+// Caso 17 - Arreglos tipados
+function ejecutarCasoDiecisiete() {
+    var arreglo = new Int8Array(8);
+    arreglo[0] = 1;
+    arreglo[1] = 2;
+    arreglo[2] = 3;
+
+    var hilera = "Elemento en la posición 1: " + arreglo[1];
+    hilera += "\nElemento en la posición 5: " + arreglo[5];
+
+    document.getElementById("resultadoCasoDiecisiete").innerText = hilera;
+}
+
+// DOM
+// Caso 18 - Selectores
+function ejecutarCasoDieciocho() {
+    document.getElementById("rojo").style.color = "red";
+    document.getElementsByTagName("span")[0].style.color = "purple";
+    document.getElementsByClassName("amarillo")[0].style.color = "yellow";
+    document.querySelectorAll('.caja #verde')[0].style.color = "green";
+    var longitud = document.getElementById("caja").getElementsByTagName("p").length;
+
+    document.getElementById("cantidadElementos").innerHTML += longitud;
+}

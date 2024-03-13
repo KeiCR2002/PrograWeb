@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números y fechas</title>
+    <link rel="stylesheet" href="../../estilos/tarea-6.css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Objeto Number</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoOnce() {
+    var factorUno = "a";
+    var factorDos = "18";
+    
+    if (Number.isNaN(factorUno)) {
+        document.getElementById("resultadoCasoOnce").innerText += "El valor " + factorUno + " no es número\n";
+    } else {
+        document.getElementById("resultadoCasoOnce").innerText += "El valor " + factorUno + " es número\n";
+    }
+
+    if (Number.isNaN(factorDos)) {
+        document.getElementById("resultadoCasoOnce").innerText += "El valor " + factorDos + " no es número\n";
+    } else {
+        document.getElementById("resultadoCasoOnce").innerText += "El valor " + factorDos + " es número\n";
+    }
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoOnce()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoOnce"></p>
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Objeto Math</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoDoce() {
+    var hilera = "";
+    hilera = "Math.sqrt(100) -> Raíz cuadrada: " + Math.sqrt(100);
+    hilera += "\nMath.pow(10, 2) -> Potencia: " + Math.pow(10, 2);
+    hilera += "\nMath.abs(-25) -> Valor absoluto: " + Math.abs(-10);
+    hilera += "\nMath.max(100, 25) -> Número mayor entre dos valores: " + Math.max(100, 25);
+    hilera += "\nMath.min(60, 12) -> Número menos entre dos valores: " + Math.min(60, 12);
+
+    document.getElementById("resultadoCasoDoce").innerText = hilera;
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoDoce()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoDoce"></p>
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Objeto Date</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoTrece() {
+    var hilera = "";
+    var fechaActual = new Date();
+
+    hilera += "La fecha actual es: " + fechaActual;
+    hilera += "\nEl año actual es: " + fechaActual.getFullYear();
+    hilera += "\nEl mes actual es: " + (fechaActual.getMonth() + 1);
+    hilera += "\nEl día del mes actual es: " + fechaActual.getDate();
+
+    document.getElementById("resultadoCasoTrece").innerText = hilera;
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoTrece()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoTrece"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/tarea6.js"></script>
+</body>
+</html>

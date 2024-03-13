@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../../estilos/tarea-6.css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Selectores</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoDieciocho() {
+    document.getElementById("rojo").style.color = "red";
+    document.getElementsByTagName("span")[0].style.color = "purple";
+    document.getElementsByClassName("amarillo")[0].style.color = "yellow";
+    document.querySelectorAll('.caja #verde')[0].style.color = "green";
+    var longitud = document.getElementById("caja").getElementsByTagName("p").length;
+
+    document.getElementById("cantidadElementos").innerHTML += longitud;
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoDieciocho()">Ejecutar</button>
+            </div>
+            <div id="caja" class="caja">
+                <p id="rojo">Cambiar color por medio del ID</p>
+                <span>Cambiar a color morado por nombre de etiqueta</span>
+                <p class="amarillo">Cambiar color por nombre de clase</p>
+                <p id="verde">Cambiar color por medio de selectores de CSS</p>
+                <p id="cantidadElementos">Cantidad de párrafos (tag: p) en este div "caja": </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/tarea6.js"></script>
+</body>
+</html>

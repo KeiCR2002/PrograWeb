@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones indexadas</title>
+    <link rel="stylesheet" href="../../estilos/tarea-6.css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Arreglos</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoDieciseis() {
+    var array = [10, 27, 22, 18, 2];
+
+    var hilera = "Elemento en la posición 2 del arreglo [10, 27, 22, 18, 2]: " + array[2];
+    hilera += "\nTamaño del arreglo [10, 27, 22, 18, 2]: " + array.length;
+
+    document.getElementById("resultadoCasoDieciseis").innerText = hilera;
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoDieciseis()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoDieciseis"></p>
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Arreglos tipados</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoDiecisiete() {
+    var arreglo = new Int8Array(8);
+    arreglo[0] = 1;
+    arreglo[1] = 2;
+    arreglo[2] = 3;
+
+    var hilera = "Elemento en la posición 1: " + arreglo[1];
+    hilera += "\nElemento en la posición 5: " + arreglo[5];
+
+    document.getElementById("resultadoCasoDiecisiete").innerText = hilera;
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoDiecisiete()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoDiecisiete"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/tarea6.js"></script>
+</body>
+</html>

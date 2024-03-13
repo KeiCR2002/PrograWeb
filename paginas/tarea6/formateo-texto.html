@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formateo de texto</title>
+    <link rel="stylesheet" href="../../estilos/tarea-6.css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Cadenas literales</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoCatorce() {
+    var nombre = "Keilyn";
+    var universidad = "UTN";
+
+    document.getElementById("resultadoCasoCatorce").innerText = `Mi nombre es ${nombre} y estudio en la ${universidad}`;
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoCatorce()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoCatorce"></p>
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="caja titulo">
+                <h2>Objeto String</h2>
+            </div>
+            <div class="caja">
+                <pre>
+                    <code>
+function ejecutarCasoQuince() {
+    var mensaje = new String("Hola mundo");
+    var hilera = "";
+
+    hilera += "Longitud de la cadena 'Hola mundo': " + mensaje.length;
+    hilera += "\Caracter de la posición 2 de la cadena 'Hola mundo': " + mensaje.charAt(2);
+    hilera += "\nConvertir la cadena 'Hola mundo' a minúscula: " + mensaje.toLowerCase();
+    hilera += "\nConvertir la cadena 'Hola mundo' a mayúscula: " + mensaje.toUpperCase();
+    hilera += "\nExisten más funciones con el objeto String";
+
+    document.getElementById("resultadoCasoQuince").innerText = hilera;
+}
+                    </code>
+                </pre>
+                <button onclick="ejecutarCasoQuince()">Ejecutar</button>
+            </div>
+            <div class="caja">
+                <p id="resultadoCasoQuince"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/tarea6.js"></script>
+</body>
+</html>
