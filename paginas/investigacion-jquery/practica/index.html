@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica jQuery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Supermercado Kwik-E-Mart</h1>
+  </header>
+
+  <main>
+    <h1>Lista de Compras</h1>
+    <article class="article1">
+      <div id="draggable1" class="draggable-item">Pan</div>
+      <div id="draggable2" class="draggable-item">Azúcar</div>
+      <div id="draggable3" class="draggable-item">Arroz</div>
+      <div id="draggable4" class="draggable-item">Refrescos</div>
+      <div id="draggable5" class="draggable-item">Pollo</div>
+      <div id="draggable6" class="draggable-item">Tortillas</div>
+      <div id="draggable7" class="draggable-item">Detergentes</div>
+    </article>
+
+    <article class="article2">
+      <div id="droppable" class="droppable-area">
+        <p>Carrito</p>
+      </div>
+    </article>
+
+    <div class="btnComprar">
+      <button type="button">Comprar</button>
+    </div>
+
+    <article class="article3">
+      <img src="imagenes/homero.jpeg">
+      <img src="imagenes/apu.jpeg">
+      <img src="imagenes/apu2.jpeg">
+    </article>
+
+    <div id="dialog" title="ATENCIÓN">
+      <p>El próximo Viernes el Kwik-E-Mart permanecerá cerrado</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Gracias por su visita. ¡Vuelva Prontos!</p>
+  </footer>
+</body>
+</html>

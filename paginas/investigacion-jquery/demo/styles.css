@@ -1,0 +1,205 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #4e4e4e;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-image: url('imagenes/header.jpg');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center;
+  position: relative;
+  height: 200px;
+  display: flex;
+}
+
+.logos img {
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  background-color: white;
+  padding: auto;
+  align-items: center;
+  color: #c52900;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  float: left;
+  color: #c52900;
+}
+
+nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.logos {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logos img {
+  width: 120px;
+  height: 120px;
+}
+
+.content {
+  padding-top: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  background-repeat: repeat-y;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p {
+  color: black;
+}
+
+main {
+  width: 671px;
+}
+
+.articulo1 {
+  text-align: justify;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.articulo1 h1 {
+  margin-bottom: 26px;
+  color: #e67d45;
+  font-size: 30px;
+  display: block;
+  border-bottom: solid;
+  text-align: center;
+}
+
+.articulo2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.articulo2 h1 {
+  margin-bottom: 26px;
+  color: #e67d45;
+  font-size: 30px;
+  display: block;
+  border-bottom: solid;
+  text-align: center;
+}
+
+.articulo2 img {
+  width: 200px;
+  height: 200px;
+}
+
+.articulo3 h1 {
+  margin-bottom: 26px;
+  color: #e67d45;
+  font-size: 30px;
+  display: block;
+  border-bottom: solid;
+  text-align: center;
+}
+
+#formulario-viaje {
+  color: black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+}
+
+#formulario-viaje button[type="submit"] {
+  margin: 10px;
+}
+
+#formulario-viaje button[type="cancelar"] {
+  margin: 10px;
+}
+
+#formulario-viaje button[type="volver"] {
+  margin: 10px;
+}
+
+.fechas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.botones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.destino{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.destino label[for="destino"]{
+  margin: 10px;
+}
+
+.destinos h5{
+  font-size: 40px;
+  color: black;
+}
+
+.btnCotizar{
+  margin: 10px;
+}
+
+footer {
+  width: auto;
+  height: 70px;
+  background-color: #e67d45;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+footer p {
+  color: #fff;
+}

@@ -60,11 +60,12 @@ main{
     margin: 20px;
 }
 footer{
-background-color: yellow;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
 
 }
 @media only screen and (max-width: 768px) {
