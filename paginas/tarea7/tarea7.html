@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 7</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2>Conversión de temperatura</h2>
+        <div class="row mb-4">
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="txtGradosCelsius" class="form-label">Temperatura en °C</label>
+                    <input type="text" class="form-control" id="txtGradosCelsius">
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-info text-white" type="button" onclick="convertirFahrenheit()">Convertir a Fahrenheit</button>
+                    <button class="btn btn-primary" type="button" onclick="convertirKelvin()">Convertir a Kelvin</button>
+                </div>
+
+            </div>
+            <div class="col-2"></div>
+            <div class="col-6">
+                <div class="card mb-3">
+                    <div class="card-header text-white bg-primary">Resultado</div>
+                    <div class="card-body text-dark">
+                        <p id="resultadoTemperatura" class="card-text">
+                            Aquí va el resultado
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="mt-5">Conversión de distancia</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="txtKilometros" class="form-label">Distancia en km</label>
+                    <input type="number" class="form-control" id="txtKilometros">
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-info text-white" type="button" onclick="convertirMillas()">Convertir a millas</button>
+                    <button class="btn btn-primary" type="button" onclick="convertirMetros()">Convertir a metros</button>
+                </div>
+
+            </div>
+            <div class="col-2"></div>
+            <div class="col-6">
+                <div class="card mb-3">
+                    <div class="card-header text-white bg-primary">Resultado</div>
+                    <div class="card-body text-dark">
+                        <p id="resultadoDistancia" class="card-text">
+                            Aquí va el resultado
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="mt-5">Índice de Masa Corporal (IMC)</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="txtPeso" class="form-label">Peso en kg</label>
+                    <input type="number" class="form-control" id="txtPeso">
+                </div>
+                <div class="mb-3">
+                    <label for="txtAltura" class="form-label">Altura en metros</label>
+                    <input type="text" class="form-control" id="txtAltura">
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button" onclick="calcularIMC()">Calcular IMC</button>
+                </div>
+
+            </div>
+            <div class="col-2"></div>
+            <div class="col-6">
+                <div class="card mb-3">
+                    <div class="card-header text-white bg-primary">Resultado</div>
+                    <div class="card-body text-dark">
+                        <p id="resultadoIMC" class="card-text">
+                            Aquí va el resultado
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="tarea7.js"></script>
+</body>
+
+</html>
